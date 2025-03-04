@@ -27,11 +27,16 @@
             font-size: 20px;
             margin-top: 10px;
         }
-        .survey-buttons {
+        .survey-buttons, .social-buttons {
             margin-top: 30px;
         }
+        .survey-buttons button:first-child {
+            background-color: #71c9ce;
+        }
+        .survey-buttons button:last-child {
+            background-color: #71c9ce;
+        }
         .survey-buttons button {
-            background-color: #00f7ff;
             color: #003366;
             border: none;
             padding: 10px 20px;
@@ -39,9 +44,29 @@
             cursor: pointer;
             margin: 10px;
             border-radius: 5px;
+            display: inline-block;
+            text-decoration: none;
+            background: none;
         }
         .survey-buttons button:hover {
-            background-color: #00f7ff;
+            text-decoration: underline;
+        }
+        .survey-buttons button:hover {
+            background-color: #ffaa00;
+        }
+        .social-buttons img {
+            width: 50px;
+        }
+        .social-buttons a {
+            background-color: #4ca484;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .social-buttons img[alt='Instagram'], .social-buttons img[alt='TikTok'] {
+            width: 50px;
+            margin: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -86,6 +111,21 @@
     <div class="survey-buttons">
         <button onclick="location.href='encuesta.html'">¿Qué programa de La Casa preferís?</button>
         <button onclick="location.href='prefe.html'">¿Qué conductor/a de La Casa preferís?</button>
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://youtube.com/@somoslacasa?si=zPcgCbDBgKNt_71t" target="_blank">
+            <img src="yt.png" alt="YouTube">
+        </a>
+        <a href="https://instagram.com/somoslacasaok" target="_blank">
+            <img src="ig.png" alt="Instagram">
+        </a>
+        <a href="https://tiktok.com/@somoslacasa" target="_blank">
+            <img src="tiktok.png" alt="TikTok">
+        </a>
+        <a href="https://x.com/somoslacasaok?t=Qel_pZm2PQnTrHbBdCvrog&s=09" target="_blank">
+            <img src="x.png" alt="Twitter">
+        </a>
     </div>
 </body>
 </html>
